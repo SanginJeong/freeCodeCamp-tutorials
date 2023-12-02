@@ -1,0 +1,83 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Practice</title>
+  <script src="https://kit.fontawesome.com/3e7a68d981.js" crossorigin="anonymous"></script>
+  <style>
+    body{
+      margin: 0;
+      background: url(https://vanilla-js-basic-project-6-modal.netlify.app/hero.jpeg);
+    }
+    .container{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box{
+      border: 1px solid black;
+      text-align: center;
+      padding: 30px;
+    }
+    .openModal{
+      border-radius: 20px;
+      border: none;
+      background-color:darkseagreen;
+    }
+    .openModal:hover{
+      background-color: black;
+      color: white;
+    }
+    .modalOverlay{
+      position: fixed;
+      top: 0;
+      background: rgba(73, 166, 233, 0.5);
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hidden{
+      display: none;
+    }
+    .modalContainer{
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      position: inherit;
+      width: 100%;
+    }
+    .top{
+      text-align: right;
+    }
+    .exit{
+      background: none;
+      border: none;
+      padding-right: 3;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="modalContent">
+        <h1>Modal Content</h1>
+      </div>
+      <button class="openModal">OPEN MODAL</button>
+    </div>
+  </div>
+  <div class="modalOverlay ">
+    <div class="modalContainer">
+      <div class="top">
+        <button class="exit"><i class="fa-solid fa-x"></i></button>
+      </div>
+      <div class="intruduce">
+        <h2>This is modal</h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

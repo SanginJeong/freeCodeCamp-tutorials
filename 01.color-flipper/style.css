@@ -1,0 +1,36 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+    box-shadow: 0px 15px 10px -15px #111;    
+}
+.title{
+    color: aqua;
+}
+.pageColor{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCenter div{
+    text-align: center;
+    padding: 10px;
+}
+#info{
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: black;
+    color: white;
+
+}
+.buttonStyle{
+    background-color: rgba(0,0,0,0);
+    padding: 10px;
+}
+@media screen and (max-width:48rem){
+    nav{
+        font-size: 10px;
+    }
+}

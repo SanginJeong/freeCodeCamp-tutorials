@@ -1,0 +1,41 @@
+body{
+    background-color: lightgray;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    text-align: center;
+}
+.title{
+    font-size: 65px;
+}
+#number{
+    font-size: 70px;
+}
+.containerButton{
+    padding: 10px;
+}
+.btn button{
+    border-radius: 5%;
+}
+.btnIncrease:hover{
+    background-color: chartreuse;
+    color: white;
+}
+.btnDecrease:hover{
+    background-color:red;
+    color: white;
+}
+.btnReset:hover{
+    background-color:black;
+    color: white;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.ml-10{
+    margin-left: 10px;
+}
